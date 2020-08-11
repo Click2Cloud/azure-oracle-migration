@@ -1,1 +1,1 @@
-Images for the pgToPgHyper utorial.
+Images for the pgToPgHyper Tutorial.
