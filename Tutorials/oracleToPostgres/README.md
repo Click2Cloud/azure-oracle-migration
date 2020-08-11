@@ -39,14 +39,12 @@ The **Azure Database Migration Service** is a tool that serves as a way to :
 
 
 ## Step 1: Oracle to Azure PostgreSQL-Single Server
-[Oracle to PostgreSQL Tuorial](https://github.com/alexanderpetraliac2c/postgresdemotemp/tree/master/main/oraToPg)
+[Oracle to PostgreSQL Tuorial](https://github.com/Click2Cloud/azure-oracle-migration/tree/master/Tutorials/oracleToPostgres/oraToPg)
 
 
 ## Step 2: Azure PostgreSQL-Single Server to Azure PostgreSQL-Hyperscale
-[PostgreSQL to PostgreSQL-Hyperscale Tuorial](https://github.com/alexanderpetraliac2c/postgresdemotemp/tree/master/main/pgToPgHyper)
+[PostgreSQL to PostgreSQL-Hyperscale Tuorial](https://github.com/Click2Cloud/azure-oracle-migration/tree/master/Tutorials/oracleToPostgres/pgToPgHyperscale)
 
-## Step 3: Test functionality of Oracle to Azure PostgreSQL-Hyperscale
-[Oracle to PostgreSQL-Hyperscale Testing](https://github.com/alexanderpetraliac2c/postgresdemotemp/tree/master/main/pgToPgHyper)
 
 
 
