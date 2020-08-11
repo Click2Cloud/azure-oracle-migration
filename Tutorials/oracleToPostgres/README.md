@@ -1,4 +1,4 @@
-# Azure Database Migration Service: Oracle to Azure PostgreSQL
+# Azure DMS: Oracle to Azure PostgreSQL-Hyperscale
 
 The **Azure Database Migration Service** is a tool that serves as a way to :
 * Migrate, guide, and automate your current **database migration** to **Azure**. 
@@ -15,7 +15,7 @@ The **Azure Database Migration Service** is a tool that serves as a way to :
 
 ## Scenario
 <kbd>
-  <img src="https://github.com/Click2Cloud/azure-oracle-migration/blob/master/Images/15.png">
+  <img src="https://github.com/alexanderpetraliac2c/azure-oracle-migration/blob/master/Images/15.png">
 </kbd></p>
 
 
@@ -25,22 +25,30 @@ The **Azure Database Migration Service** is a tool that serves as a way to :
 * Assess **tables and objects** that user wants to migrate to the created **Azure PostgreSQL Database**. 
 * Then migrate the schema from the **Oracle Database** to the **Azure PostgreSQL Database**.
 * After this set up **Azure DMS** by connecting both databases, so that continuous sync can happen between our tables.
-* Once **Azure DMS** connection is established, the **PostgreSQL Database** can be used for applications and analytics.
-
+* We then create an **Azure PostgreSQL-Hyperscale Database** and migrate the schema from regular PostgreSQL
+* Finally, we connect PostgreSQL to PostgreSQL-Hyperscale using Azure DMS
 
 ### **Scenario Setup:**
 
 * **Source VM:** Windows Server 2019 with Oracle Image (*12.2.0.1.0 Enterprise Edition*) installed.
 * **Oracle Database:** Non-Container Database (*12.2.0.1.0 Enterprise Edition*).
 * **PostgreSQL Database:** Azure PostgreSQL-Single Server, PostgreSQL version 10
-* **Oracle Database Contents:** Contains STORE table with 1000 generated rows
-* **PostgreSQL Database Contents:** Contains STORE(empty pre-migration), SALES_TRANSACTION(100 million rows), and PRODUCTS(1000+ rows) tables
+* **PostgreSQL-Hyperscale Database:** Azure PostgreSQL-Hyperscale Server, PostgreSQL version 11
 * **Duration of Demo:** Approximately *30 minutes*
 
-## Prerequisites
-* [Prerequisites tutorial](https://github.com/Click2Cloud/azure-oracle-migration/blob/master/Tutorials/oracleToPostgres/Prerequisites/README.md)
 
-## Oracle to PostgreSQL Migration using Azure DMS (Video)
 
-* [World Wide Importer Oracle Database Migration](https://github.com/Click2Cloud/azure-oracle-migration/blob/master/Tutorials/oracleToPostgres/DMS/dmsTutorial.md)
-* [World Wide Importer Oracle Database Migration (Video)](https://github.com/Click2Cloud/azure-oracle-migration/blob/master/Videos/azuredmsproject.mp4)
+## Step 1: Oracle to Azure PostgreSQL-Single Server
+[Oracle to PostgreSQL Tuorial](https://github.com/alexanderpetraliac2c/postgresdemotemp/tree/master/main/oraToPg)
+
+
+## Step 2: Azure PostgreSQL-Single Server to Azure PostgreSQL-Hyperscale
+[PostgreSQL to PostgreSQL-Hyperscale Tuorial](https://github.com/alexanderpetraliac2c/postgresdemotemp/tree/master/main/pgToPgHyper)
+
+## Step 3: Test functionality of Oracle to Azure PostgreSQL-Hyperscale
+[Oracle to PostgreSQL-Hyperscale Testing](https://github.com/alexanderpetraliac2c/postgresdemotemp/tree/master/main/pgToPgHyper)
+
+
+
+
+
